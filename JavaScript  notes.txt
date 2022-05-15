@@ -1,0 +1,301 @@
+
+                                                      JavaScript Course Notes of every video
+  
+
+Video No.1 
+
+     In this video I learned about Client Side and server side. I learned how can you run javascript
+     in console in your browser like open your console and enter" alert('hello') ". It will prompt an
+     alert and we learned about console.log('String your want to enter')it prints the string in the 
+     console. Installed Visual Studio Code and we ran some more in-browser javascript in the console like 
+     document.getElementsByClassName etc. 
+
+
+Video No.2
+     In this video I learned that we can run run javascript by writing it in a  different file. 
+     Learned about different datatypes. Learned about consle.table({eman:"harry",marks:"fifty"})
+     and console.warn() and it prints a warning in the console. console.clear() : it clears the 
+     console. Learned about console.time() and console.timeEnd() when your wanna see how much time it
+     took you to complete a certain number of lines of code and after that learned about 
+     console.assert(condition, "string you wanna enter"). It returns an error when the condition returns
+     false.
+
+Video No.3
+     In this video I learned about variables. Variable Declaration and variable assigning. var , let , const are 
+     used to declare variables in javascript.	We learned rules for creating variables in javascript.
+     Rules :
+                   1 Cannot start with numbers
+                   2 Variable names cannot contain spaces.
+                   3 Variable names must begin with a letter, an underscore (_) or a dollar sign ($).]
+                   4 Variable names can only contain letters, numbers, underscores, or dollar signs.
+                   5 Variable names are case-sensitive.
+
+     let has a block level scope If you define a variable without using these then the global variable is 
+     Common Case types
+     overwritten even inside a block and you cannot reassign the value to a const. After that I learned about most 
+    
+                                  The most common Case types in Javascript  
+                                 
+                      camelCase           kebab-case           snake_case            PascalCase
+
+Video No.4
+     Starting this video by learning about datatypes Two types of datatypes in javascript. First is 
+     Primitive and Reference datatypes. In primitive datatypes memory allocation is in stack and in reference it
+     is in heap.
+                       Primitive Datatypes String, numbers, boolean, Null, Undefined, Symbol
+                       Reference Datatypes Arrays, object literals, functions and dates	
+     And we learned about typeof function and the types of many datatypes. Null is a primitive but its type 
+     is object. Made the first function in javascript and made a date function.
+Video No.5
+     This video is about Type Conversion and type coercion. Learned about string() function. It is used to 
+     convert a number to string. When any datatype is converted to a string then its functions can be applied
+     on it and vice versa. Learned about Number() function and ParseInt(). They are both the same but when 
+     parseInt when given a decimal gives an integer for example parseInt(3.44343) it returns 34 but Number()
+     returns the exact value as 3.44343. PareseFloat does the same thing too. There is another function 
+     .tofixed() it returns given number decimal points.	
+Video No.6
+     This video is about string properties and methods. So string functions in javascript are:
+        Be careful that it does not change the original string
+           it just returns it.
+       let html = "This is just for fun " 
+      ------- html = html.concat("this");         /// html.concat("this"); console.log(html); this won't work
+       console.log(html)   /////  Console (This is just for fun this)
+      ------- html.toLowerCase();
+      ------- html.toUpperCase();
+      ------- html.length;
+      ------- html.indexof();
+      ------- html.lastIndexOf();
+      ------- html.charAt();
+      ------- html.endsWith();
+      ------- html.includes();
+      ------- html.substring(0,3); it gives you the characters starting from 0 to n-1.
+      ------- html.slice(-4)
+      ------- html.split(' '); It returns the string as an array.
+      ------- html.replace("this","This");
+      And then comes template Literals. Template Literals are like this 
+          let name = "Eman";
+          html = `This is a heading ${name}.`
+      
+Video No.7 
+       This video is about Array methods and properties. You can also make an array like this 
+       const arr = new Array(23,4,5,67,6,"Orange");
+       The length of an array starts from 1 but its index starts from 0.
+       Methods and properties
+     --  Array.isArray();
+     --  Array.indexOf();	
+        Now be careful because it changes the original array.
+     --  Array.push(); It is pushed in the end of the array.
+     --  Array.unshift(); It is pushed in the starting of the array.
+     --  Array.pop(); It removes an element fromm the ending of the array.
+     --  Array.shift(); It removes an element from the starting of the array.
+     --  Array.splice(1,2); It removes 2 elements starting from 1st element excluding the 1st element.
+     --  Array.reverse(); It reverses the whole array. 	
+         Then leaned about objects and how to access its elements and ending the video now.
+Video No.8
+       In this video we are gonna talk about If-else statements and switches in javascript. I already know
+       everything about if-else statements. So now about switches.Switch case statements are not used that
+       much so just learn it for the concept.
+Video No.9 
+       This video is about for,while and dowhile loops. Whenver we want to repeat something we use loops.
+       For example, for (let i=0;i<100;i++){
+                                 console.log(i); }	First, the i is initialized as 0 and the condition is 
+       checked if its true then the loop is ran one time then it is updated i++ then it is ran the same way 
+       until the condition becomes false. Learned about forEach loop to print the elements of an array.
+       How to print and object: 
+                        for(let key in obj){
+                                            console.log(obj[key])            }
+                    Ending the video now.
+Video No.10
+       This video is about the concept of functions in javascript. Also gonna learn about the concept of 
+       Scope in javascript. It is an important video. So first functions.Already know about functions 
+       pretty much everything.	
+      We can write a function like this :
+   
+          function funct(param1,param2) {
+             let val = param1 + param2;
+             return val;
+         }
+          and call it like this:
+                  console.log(funct(2,4));       //This prints to the console 6 the sum of 2 and 4.
+
+         This is also a valid syntax  :
+                   const greet = function (param1,param2){
+                           let val = param1 + param2;
+                           return val;}         // It returns the same thing.
+
+
+               Scope in javascript: let and const have block level scope and var has function level scope.
+               This means if a variable i is defined inside an if statement with var and you console it 
+               outside the block it will not give and error but if you assign it with a let it will give an
+               error that i is not defined.That's because let has block level scope and var has function level
+               or global scope.
+
+Video No.11	
+         This video is about manipulating websites with js window object.
+                    If you           let a = window;
+                                     console.log(a); It will show you all window funcitons.
+         For example, If you write window.innerHeight; It will tell you the inner height of the window.
+         Likewise, there is innerWidth; Another function is scrollX and scrollY;It tells you how much have
+         you scrolled in X or Y.Another function is location.reload(); It reloads the page.
+         Another function is location.href. You can assign it any webpage and your page will go to that page.
+         Another function is window.history; So if you write history.go(-1) so it will reload you to your previous 
+         page where you were before.
+
+Video No.12
+         This video is about understanding DOM more.If you type document.all it gives you all the tags 
+         that you have used in your website.If there is a form then type document.form it gives you all 
+         forms in  your website.Learned about Array.from(a).forEach(function(element){ conosole.log(element)})
+         It makes and array from it.Another document.links gives you all the links in the html page.
+         document.scripts and document.images are useful too.
+Video No.13
+         This is exercie no.1 in javascript : WebPage Crawler.
+Video No.14
+         This video is about DOM Selectors in javascript. There are two types of DOM Selectors in javascript.
+         Single element selectors and Multi element selectors. 
+         let elem = document.getElementById('idname')
+         elem.className;
+         elem.childNodes;
+         elem.parentNode;
+         elem.style.color = "red";
+         elem.innerText = "Text you wanna add.";
+         elem.innerHtml = "Html that you wanna add.";
+              document.querySelector() is also an element selector. You can also give it a tag or class or id.
+         Multi element selector:
+           document.getElementsByClassName(); document.getElementsByTagName();
+         
+Video No.15
+         This video is about Traversing the DOM and Children,Parent in javascript. Learned about Child Nodes and 
+         children childNodes returns everthing including comments and spaces. We should use children.Also 
+         nodeName returns the nodename and nodetype returns the node's type. 1 for element 2 attribute 3 text node
+         8 comment 9 document 10 doctype.Another is firstChild it returns the first child but dont use it becuase 
+         it will count the spaces. Instead use firstElementChild.Another is ChildElementCount It returns the count
+         of child elements.Likewise When we use nextSibling it returns the very next sibling if there is a space 
+         it will return text. So use nextElementSibling instead.
+
+Video No.16
+         This video is about Creating,removing and replacing elements.First to create and element :
+         let elem = document.createElement('li'); To add a class and id :
+         elem.className = "liclass"; elem.id = "lid"; Set any attribute by this function. For example,
+         elem.setAttribute("title","mytitle"); Adding some text to it: elem.innerText = "This is an li5";
+         Now appending it to an element present in the DOM in this case ul.
+         let ul = document.querySelector('ul');ul.appendChild(elem);
+         You can also add a text like this : document.createTextNode("I am a text node.")
+         How to replace and element You can use this: element.replaceWith(Elementyouwannaadd);
+         You can also replace a child with replaceChild(Child you wanna add,Element you wanna replace with);
+         For example, myul.replaceChild(elem2,document.getElementById('fui')); You can also remove the child
+         with removechild(); Also elem.getAttribute('id'). It gives you the id of that element.  Also if you 
+         wanna see that an element has an attribute or not. You can use elem.hasAttribute('class').
+         You can remove it by using elem.removeAttribute('class'); Harry bhai also gave a quick quiz at 
+         the end of the video.
+Video No.17
+         This video is about the Event object and handling events in javascrpt. You can call an event like this
+         h.addEventListener('click',function(e){
+         console.log("You have clicked the headng." ,e);}) There are many types of events. One of them is Click.
+         e.target gives you what you cliked. A property e.target.classList gives you the list of the classes in
+         the target you are clicking. Another is e.offsetX. It will tell you where have you clicked relative to
+         the element.Similarly there is OffsetY.There is also ClientX and ClientY it gives you relative to the 
+         browser window. 
+         Another event is mouseover.
+                                         Ending the video . // The next video is also about the event object
+         and more on javascript events.
+Video No.18
+          So, again on events.First things is that the default behaviour of a form is that it submits the form. 
+          So, to prevent that we use e.preventDefault() function.So another event is dblclick.Anothe is mousedown
+          Even if you right click on it or click with the  mouse wheel, the event will fire itself.There are two
+          more which include mouseenter and mouseleave.Likewise, there is mousemove event.
+Video No.19
+          This video was the solution of the exercise 1.
+Video No.20
+          This video is about local and session storage. Its an important concept in javascript.
+Video No.21
+
+Video No.22
+
+Video No.23
+
+Video No.24
+
+Video No.25
+
+Video No.26
+
+Video No.27
+
+Video No.28
+
+Video No.29
+
+Video No.30
+
+Video No.31
+
+Video No.32
+
+Video No.33
+
+Video No.34
+
+Video No.35
+
+Video No.36
+
+Video No.37
+
+Video No.38
+
+Video No.39
+
+Video No.40
+
+Video No.41
+
+Video No.42
+
+Video No.43
+
+Video No.44
+
+Video No.45
+
+Video No.46
+
+Video No.47
+
+Video No.48
+
+Video No.49
+
+Video No.50
+
+Video No.51
+
+Video No.52
+
+Video No.23
+
+Video No.54
+
+Video No.55
+
+Video No.56
+
+Video No.57
+
+Video No.58
+
+Video No.59
+
+Video No.60
+
+Video No.61
+
+Video No.62
+
+Video No.63
+
+Video No.64
+
+Video No.65
+
+Video No.66
+
