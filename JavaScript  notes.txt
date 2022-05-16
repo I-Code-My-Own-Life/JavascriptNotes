@@ -206,11 +206,18 @@ Video No.18
 Video No.19
           This video was the solution of the exercise 1.
 Video No.20
-          This video is about local and session storage. Its an important concept in javascript.
+          This video is about local and session storage. Its an important concept in javascript.If you type in the
+          console window.localStorage; The console will show you the storage. You can store items in it like this
+          localStorage.setItem("firstKey","value"); To get an item localStorage.getItem("firstKey");
+          localStorage.clear() clears the entire localStorage. You cannot add arrays in local storage. But we are 
+          going to see how can we add and array to local storage. You can use JSON.stringify(array) and when you 
+          wanna retrieve that value use JSON.parse(localStorage.getItem('Key'));
+
+          
 Video No.21
-
+          In this video I am gonna make a program. Its an exercise in the course. Exercise NO.2
 Video No.22
-
+ 
 Video No.23
 
 Video No.24
