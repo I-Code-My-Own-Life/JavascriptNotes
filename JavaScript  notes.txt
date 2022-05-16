@@ -215,7 +215,11 @@ Video No.20
 
           
 Video No.21
-          In this video I am gonna make a program. Its an exercise in the course. Exercise NO.2.
+          In this video I am gonna make a program. Its an exercise in the course. Exercise NO.2.So Instead we will
+          learn something else in it. So, we are going to learn about setTimeout and setInterval in javascript.
+          So, setTimeout(); Allows us to run the function once after the interval of time.
+          So, setInterval(); Allows us to run the function repeatedly after the interval of time.
+          You can also clear the timeout with clearTimeout();	
 Video No.22
  
 Video No.23
